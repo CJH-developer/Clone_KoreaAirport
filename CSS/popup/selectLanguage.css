@@ -1,0 +1,28 @@
+.gothic-a1-regular {font-family: "Gothic A1", sans-serif;font-weight: 400;font-style: normal;}
+
+/******************************************** 기본 설정********************************************/
+html, body{margin: 0;padding: 0;font-family: "Gothic A1", sans-serif;}
+ul, ol, li{list-style: none;}
+button, a{cursor: pointer;}
+button, a, li{color: black;}
+a:link, a:hover, a:focus, a:visited{text-decoration: none;}
+
+
+/******************************************** 지역/언어 선택 ********************************************/
+.select__wrapper{display: flex;align-items: center;justify-content: center;}
+.select__wrapper__container{display: flex;flex-direction: column;width: 720px;}
+.select__wrapper__header{margin-top: 30px;}
+.select__wrapper__header span{font-size: 24px;font-weight: 700;}
+.select__wrapper__body{display: flex;flex-direction: column;margin-top: 30px;width: 100%;}
+.select__body__nation{display: flex;flex-direction: column;   width: 100%;}
+.nation2{margin-top: 30px;}
+.select__title span{font-size: 18px;font-weight: 600;}
+.select__divideLine{margin-top: 10px;width: 85%;border: 1px solid gray;}
+.select__nation{display: flex;margin-top: 10px;width: 100%;}
+.nation__left__button{display: flex;cursor: pointer;}
+.nation__left__button span:hover{border-bottom: 1px solid rgb(70, 107, 231);}
+.select__nation__left{display: flex;flex-direction: column;width: 50%;}
+.select__nation__left div{margin: 10px 0px;}
+.select__nation__right{display: flex;flex-direction: column;width: 50%;}
+.select__nation__right div{margin: 10px 0px;}
+.select__nation__right span:hover{border-bottom: 1px solid rgb(70,107,231);}

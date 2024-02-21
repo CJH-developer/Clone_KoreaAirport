@@ -1,0 +1,352 @@
+.gothic-a1-regular {font-family: "Gothic A1", sans-serif;font-weight: 400;font-style: normal;}
+
+/******************************************** 기본 설정********************************************/
+html, body{margin: 0;padding: 0;font-family: "Gothic A1", sans-serif;}
+ul, ol, li{list-style: none;}
+button, a{cursor: pointer;}
+button, a, li{color: black;}
+a:link, a:hover, a:focus, a:visited{text-decoration: none;}
+
+
+/******************************************** 헤더 설정********************************************/
+.header__wrapper{display: flex;flex-direction: column; align-items: center;justify-content: center; padding-bottom: 10px;}
+.header__container{display: flex;flex-direction: column;width: 1500px;}
+
+/******************************************** 헤더 상위 영역 ********************************************/
+.header__container__above{display: flex;align-items: center;justify-content: flex-end;}
+.header__container__above div{padding: 10px 10px;font-size: 13px;color: gray;}
+.above__event, .above__question, .above__selLang, .above__join{display: flex;align-items: center;justify-content: center;cursor: pointer;}
+.above__event i, .above__question i, .above__selLang i, .above__join i{padding: 0px 5px;}
+.above__event:hover, .above__question:hover, .above__selLang:hover, .above__join:hover{font-weight: 700;color: rgb(70, 107, 231);}
+
+/******************************************** 헤더 하위 영역 ********************************************/
+.header__container__below{display: flex;align-items: center;width: 100%;}
+.below__left{display: flex;align-items: center;justify-content: flex-start;width: 35%; font-size: 25px;}
+.below__left i{margin-right: 10px;}
+.below__left span{color: rgb(86, 141, 243);}
+.below__left img{padding-left: 20px; padding-top: 5px;}
+.below__right{display: flex;justify-content: space-between;width: 65%;}
+.below__right__left{display: flex;margin-top: 10px; z-index: 2;}
+.below__right__left div{padding: 0px 25px;font-size: 18px;font-weight: 600;}
+.below__right__right{display: flex;align-items: center;justify-content: center;}
+.header__right__search{display: flex;align-items: center;justify-content: center;position: relative;}
+.header__right__search input{width: 230px;padding: 5px 15px;height: 21px;border-radius: 15px;background-color: rgb(243, 241, 241);border: none;}
+.header__right__search input:hover{border: 2px solid rgb(70, 107, 231);}
+.header__right__search i{position: absolute;right: 14px;top: 10px;}
+.header__right__login{display: flex;align-items: center;justify-content: center;margin-left: 10px;border-radius: 15px;height: 25px;width: 60px;background-color: rgb(42, 42, 122);cursor: pointer;}
+.header__right__login span{padding-top: 5px;font-size: 14px;font-weight: 600;color: white;}
+.header__right__login:hover{transform: scale(1.1);transition: transform 0.5s ease-in-out;}
+.header__right__reserve.hover{transform: scale(1.1);transition: transform 0.5s ease-in-out;color: rgb(70, 107, 231);}
+.header__right__airport.hover{transform: scale(1.1);transition: transform 0.5s ease-in-out;color: rgb(70, 107, 231);}
+.header__right__innerPort.hover{transform: scale(1.1);transition: transform 0.5s ease-in-out;color: rgb(70, 107, 231);}
+.header__right__skypass.hover{transform: scale(1.1);transition: transform 0.5s ease-in-out;color: rgb(70, 107, 231);}
+
+/******************************************** 헤더 숨겨진 메뉴 영역1 ********************************************/
+.header__wrapper__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.header__menu__container{
+    display: none;
+    width: 1500px;
+    border-left: 1px solid rgb(223, 220, 220);
+    box-shadow: 2px 2px 1px 1px rgb(196, 194, 194);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 50px;
+    margin-top: -9px;
+    background-color: white;
+}
+
+.header__menu__container.active{
+    display: flex;
+    animation:translateY 1s linear 1;
+}
+
+@keyframes translateY{
+    0%{transform : translateY(-5px);}
+    50%{transform : translateY(0px);}
+    100%{transform : translateY(0px)}
+}
+
+.menu__container__left{
+    margin: 30px 30px;
+    display: flex;
+    width: 80%;
+}
+
+.menu__container__left div{
+    margin: 0px 10px;
+}
+
+.menu__left__content{
+    display: flex;
+    width: 33%;
+    height: 80%;
+    flex-direction: column;
+    padding: 10px 10px;
+    padding-bottom: 45px;
+    border: 1px solid rgb(218, 214, 214);
+    box-shadow: 1px 1px 1px 1px rgb(196, 193, 193);
+    border-radius: 10px;
+}
+
+.menu__left__content span{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.menu__left__content a{
+    padding-top: 20px;
+}
+
+.menu__left__content a:hover{
+    text-decoration: underline black;
+}
+
+.menu__left__content > a > span{
+    font-size: 15px;
+    font-weight: normal;
+    color: gray;
+}
+
+.menu__container__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.menu__container__right img{
+    width: 90%;
+    border-radius: 15px;
+    
+}
+
+.menu__right__image{
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__right__image:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
+.menu__right__image span{
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    font-weight: bold;
+}
+
+.menu__right__image > span > i{
+    margin-left: 5px;
+}
+
+/******************************************** 헤더 숨겨진 메뉴 영역2 ********************************************/
+
+.header__menu__container2{
+    display: none;
+    width: 1500px;
+    border-left: 1px solid rgb(223, 220, 220);
+    box-shadow: 2px 2px 1px 1px rgb(196, 194, 194);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 40px;
+    background-color: white;
+    margin-top: -9px;
+}
+
+.menu__container__left2{
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    margin-top: 20px;
+}
+
+.menu__container__top, .menu__container__bottom{
+    display: flex;
+    height: 350px;
+}
+
+.menu__container__bottom{
+    padding: 20px 0px;
+}
+
+.menu__container__top div, .menu__container__bottom div{
+    margin: 10px 10px;
+}
+
+.menu__container__right2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.menu__container__right2 img{
+    width: 90%;
+    border-radius: 15px;
+    margin: 15px 0px;
+}
+
+.menu__right__image2{
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__right__image2:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
+.menu__right__image2 span{
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    font-weight: bold;
+}
+
+.menu__right__image2 > span > i{
+    margin-left: 5px;
+}
+
+.header__menu__container2.active{
+    display: flex;
+    animation:translateY 1s linear 1;
+}
+
+/******************************************** 헤더 숨겨진 메뉴 영역3 ********************************************/
+.header__menu__container3{
+    display: none;
+    width: 1500px;
+    border-left: 1px solid rgb(223, 220, 220);
+    box-shadow: 2px 2px 1px 1px rgb(196, 194, 194);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 50px;
+    background-color: white;
+    margin-top: -9px;
+}
+
+.menu__container__left3{
+    margin: 30px 30px;
+    display: flex;
+    width: 80%;
+}
+
+.menu__container__left3 div{
+    margin: 0px 10px;
+}
+
+.menu__container__right3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.menu__container__right3 img{
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px 0px;
+}
+
+.menu__right__image3{
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__right__image3:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
+.menu__right__image3 span{
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    font-weight: bold;
+}
+
+.menu__right__image3 > span > i{
+    margin-left: 5px;
+}
+
+.header__menu__container3.active{
+    display: flex;
+    animation:translateY 1s linear 1;
+}
+/******************************************** 헤더 숨겨진 메뉴 영역4 ********************************************/
+.header__menu__container4{
+    display: none;
+    width: 1500px;
+    border-left: 1px solid rgb(223, 220, 220);
+    box-shadow: 2px 2px 1px 1px rgb(196, 194, 194);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 50px;
+    background-color: white;
+    margin-top: -9px;
+}
+
+.menu__container__left4{
+    margin: 30px 30px;
+    display: flex;
+    width: 80%;
+}
+
+.menu__container__left4 div{
+    margin: 0px 10px;
+}
+
+.menu__container__right4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.menu__container__right4 img{
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px 0px;
+}
+
+.menu__right__image4{
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__right__image4:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
+.menu__right__image4 span{
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    font-weight: bold;
+}
+
+.menu__right__image4 > span > i{
+    margin-left: 5px;
+}
+
+.header__menu__container4.active{
+    display: flex;
+    animation:translateY 1s linear 1;
+}

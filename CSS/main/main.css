@@ -1,0 +1,157 @@
+.gothic-a1-regular {font-family: "Gothic A1", sans-serif;font-weight: 400;font-style: normal;}
+
+/******************************************** 기본 설정********************************************/
+html, body{margin: 0;padding: 0;font-family: "Gothic A1", sans-serif;}
+ul, ol, li{list-style: none;}
+button, a{cursor: pointer;}
+button, a, li{color: black;}
+a:link, a:hover, a:focus, a:visited{text-decoration: none;}
+
+
+/******************************************** 섹션 설정********************************************/
+
+.section__wrapper{display: flex;align-items: center;justify-content: center;width: 100%;}
+.section__wrapper__content{display: flex;flex-direction: column;width: 100%;}
+.section__header{display: flex;align-items: center;justify-content: center;height: 500px;background-image: url("/IMG/main/sky.jpg");background-size: 100%;}
+
+.section__header__content{display: flex;flex-direction: column;align-items: center;justify-content: center;width: 1500px;height: 100%;}
+
+.section__header__alarm{display: flex;align-items: center;width: 100%;height: 6%;border: 1px solid white;border-radius: 6px;background-color: white;padding-left: 10px;}
+.section__header__alarm i{color: red;padding-right: 10px;}
+.section__header__alarm span{color: red;font-size: 14px;padding-top: 5px;cursor: pointer;}
+.section__header__alarm span:hover{text-decoration: underline red;}
+
+.section__header__reserve{display: flex;flex-direction: column;width: 100%;}
+.header__reserve__list{display: flex;justify-content: space-between;margin-top: 25px; width: 100%; height: 80px;}
+
+.reserve__btn1, .reserve__btn2 , .reserve__btn3, .reserve__btn4{display: flex;align-items: center;
+justify-content: center;height: 100%;width: 25%;background-color: rgb(64, 87, 136);margin: 0px 1px;border-top-left-radius: 25px;border-top-right-radius: 25px;cursor: pointer;}
+.reserve__btn1:hover, .reserve__btn2:hover, .reserve__btn3:hover, .reserve__btn4:hover{text-decoration: underline white;}
+.reserve__btn1 span, .reserve__btn2 span, .reserve__btn3 span, .reserve__btn4 span{padding: 10px 1px; padding-bottom: 20px; color: white;font-weight: 600;}
+
+/******************************************** 섹션 예약 상위 화면********************************************/
+.header__reserve__content{display: flex;flex-direction: column;width: 100%;height: 240px;background-color: white;border-top-left-radius: 25px;border-top-right-radius: 25px;margin: -20px 0px;}
+
+.reserve__content__above{display: flex;margin: 30px 40px;}
+.reserve__above__left{display: flex;align-items: center;justify-content: center;width: 250px;height: 35px;position: relative;}
+.reserve__above__left div{padding: 0px 10px;}
+.above__left__reserve{display: flex;align-items: center;justify-content: center;background-color: rgb(64, 87, 136);border: 1px solid rgb(64, 87, 136);border-radius: 20px;width: 50px;position: absolute;left: 20px;top: 0px;z-index: 2;height: 100%;}
+.above__left__reserve span{color: white;font-weight: 600;padding-top: 4px;cursor: pointer;}
+.above__left__reserve span:hover{text-decoration: underline white;}
+.above__left__Mileage{display: flex;align-items: center;justify-content: center;background-color: white;border: 1px solid rgb(206, 205, 205);border-radius: 25px;width: 140px;height: 100%;position: absolute;left: 65px;top: 0px;z-index: 1;}
+.above__left__Mileage span{padding-left: 10px;padding-top: 4px;font-weight: 600;cursor: pointer;}
+.above__left__Mileage span:hover{text-decoration: underline black;}
+.reserve__above__right{display: flex;align-items: center;justify-content: center;}
+.reserve__above__right div{padding: 0px 15px;height: 32px;}
+.above__right__round, .above__right__only, .above__right__many{display: flex;align-items: center;justify-content: center;}
+.above__right__round span, .above__right__only span, .above__right__many span{padding-top: 4px;color: gray;cursor: pointer;}
+.above__right__round span:hover, .above__right__only span:hover, .above__right__many span:hover{font-weight: 600;color: black;}
+
+/******************************************** 섹션 예약 하위 설정********************************************/
+
+.reserve__content__below{display: flex;margin: 30px 40px;}
+.below__select__trip{display: flex;}
+.below__select__trip div{padding: 0px 15px;}
+.trip__start, .trip__end{display: flex;flex-direction: column;align-items: center;justify-content: center;margin-left: 10px;cursor: pointer;}
+.trip__start:hover, .trip__end:hover{color: red;}
+.trip__start span, .trip__end span{font-size: 30px;font-weight: bold;}
+.trip__return{margin-top: 20px;}
+.trip__return i{font-size: 30px;cursor: pointer;}
+.trip__return i:hover{color: red;}
+
+.below__select__calender{height: 80px;margin-left: 50px;border-bottom: 1px solid rgb(206, 203, 203);}
+.below__select__calender span{font-size: 13px;color: gray;}
+.calender__select{margin-top: 30px;padding-left: 4px;cursor: pointer;width: 400px;}
+.calender__select:hover{transform: translateX(10px);transition: transform 0.3s ease-in-out;color: rgb(53, 123, 226);font-weight: 600;span{color: rgb(53, 123, 226);}}
+.calender__select span{font-size: 16px;}
+
+.below__select__cnt{height: 80px;margin-left: 50px;border-bottom: 1px solid rgb(196, 192, 192);}
+.below__select__cnt span{font-size: 13px;color: gray;}
+.cnt__select{display: flex; margin-top: 30px;padding-left: 4px;cursor: pointer;width: 200px; position: relative; cursor: pointer;}
+.cnt__select:hover{transform: translateX(-5px);transition: transform 0.5s;color: rgb(53, 123, 226);}
+.cnt__select i{position: absolute; right: 10px; top: 5px;}
+
+.below__select__seat{height: 80px;margin-left: 50px;border-bottom: 1px solid rgb(196,192,192);}
+.below__select__seat span{font-size: 13px;color: gray;}
+.seat__select{display: flex; margin-top: 30px;padding-left: 4px;cursor: pointer;width: 200px; position: relative; cursor: pointer;}
+.seat__select:hover{transform: translateX(-5px);transition: transform 0.5s;i{color: rgb(53, 123, 226);}}
+.seat__select i{position: absolute; right: 10px; top: 5px;color: gray;}
+
+.below__select__button{height: 80px; margin-left: 70px;}
+.below__select__button button{margin-top: 38px;width: 120px;height: 47px;font-size: 17px;border-radius: 8px;background-color: rgb(38, 38, 117);color: white;border: 1px solid rgb(38,38,117);}
+.below__select__button button:hover{background-color: rgb(58, 58, 126);border: 1px solid rgb(58,58,126);font-weight: 570;}
+
+/******************************************** 섹션 이벤트 슬라이드 설정********************************************/
+
+.section__event{display: flex;align-items: center;justify-content: center;margin-top: 50px;}
+.section__event__content{width: 1500px;}
+.swiper {width: 100%;}
+.swiper-slide {display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: 18px;width: 30%;padding-bottom: 80px;margin: 0px 10px;border: 1px solid rgb(228, 224, 224);border-radius: 15px;position: relative;cursor: pointer;}
+.swiper-slide > img{width: 100%;margin-bottom: 20px;border-top-left-radius: 15px;border-top-right-radius: 15px;}
+.swiper-slide > span{position: absolute;bottom: 40px;left: 30px;font-weight: 600;height: 30px;}
+.swiper-slide:hover{overflow: hidden;img{transform: scale(1.1);transition: transform 0.5s ease-in-out;}span{text-decoration: underline black;}}
+.swiper-button-next{color: black;}
+
+/******************************************** 섹션 공지 설정 ********************************************/
+
+.section__notice{display: flex; align-items: center; justify-content: center; margin-top: 100px;}
+.section__notice__content{display: flex; flex-direction: column; width: 1500px;}
+.section__notice__above{display: flex; justify-content: space-between;}
+.section__notice__above span{font-size: 30px; font-weight: 600;}
+.section__notice__above a{color: gray;}
+.section__notice__above a:hover{text-decoration: underline black;}
+
+.section__notice__below{display: flex; margin-top: 30PX;}
+.notice__below__left{display: flex;flex-direction: column;width: 65%;}
+.below__left__notice{display: flex;align-items: center;justify-content: space-between;width: 100%;height: 70px;border-top: 1px solid rgb(214, 211, 211);cursor: pointer;}
+.below__left__notice a{font-weight: 600;}
+.below__left__notice:hover{a{text-decoration: underline black;}}
+.notice__below__right{display: flex;align-items: center;justify-content: center;width: 35%;}
+.notice__below__right img{width: 95%;border-radius: 15px;margin-left: 40px;}
+.notice__below__right:hover{img{transform: scale(1.05);transition: transform 0.6s ease-in-out;}}
+
+
+/******************************************** 섹션 여행 상품 설정 ********************************************/
+
+.section__help{display: flex; align-items: center; justify-content: center; margin-top: 100px; background-color: rgb(212, 229, 243);}
+.section__help__content{display: flex; flex-direction: column; width: 1500px; padding-top: 80px;}
+.section__help__content span{font-size: 25px;font-weight: bold;}
+.help__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.help__list__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(224, 237, 245);
+    border-radius: 15px;
+    width: 13%;
+    height: 130px;
+    background-color: rgb(224, 237, 245);
+    cursor: pointer;
+}
+
+.help__list__box span{
+    font-size: 18px;
+}
+
+.help__list__box i{
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.help__list__box:hover{
+    background-color: white;
+    
+    span{
+        text-decoration: underline black;
+    }
+
+}

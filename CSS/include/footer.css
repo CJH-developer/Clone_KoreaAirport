@@ -1,0 +1,41 @@
+.gothic-a1-regular {font-family: "Gothic A1", sans-serif;font-weight: 400;font-style: normal;}
+
+/******************************************** 기본 설정********************************************/
+html, body{margin: 0;padding: 0;font-family: "Gothic A1", sans-serif;}
+ul, ol, li{list-style: none;}
+button, a{cursor: pointer;}
+button, a, li{color: black;}
+a:link, a:hover, a:focus, a:visited{text-decoration: none;}
+
+/******************************************** footer 상위 설정********************************************/
+
+.footer__wrapper{display: flex; align-items: center; justify-content: center; background-color: rgb(218, 224, 236);}
+.footer__wrapper__above{width: 1500px; display: flex;}
+.footer__above__left{display: flex; width: 70%;}
+
+.above__left__box{display: flex; flex-direction: column; width: 25%; padding: 40px 0px; }
+.above__left__box span{font-size: 18px; font-weight: bold; margin-bottom: 20px;}
+.above__left__box a{padding: 5px 0px; color: rgb(17, 17, 17); font-size: 16px;}
+.above__left__box a:hover{text-decoration: underline black;}
+
+
+
+
+.footer__above__right{display: flex; flex-direction: column; align-items: center; width: 30%; margin-top: 40px;}
+.above__right__sns{display: flex; width: 100%; justify-content: flex-end;}
+.sns__logo{margin: 0px 15px;display: flex;align-items: center;justify-content: center;width: 40px;height: 40px;border: 1px solid gray;background-color: rgb(97, 95, 95);border-radius: 25px;cursor: pointer;}
+.sns__logo i{font-size: 20px;color: white;}
+.sns__logo:hover{i{font-weight: bold;}}
+.above__right__store{display: flex; width: 100%; align-items: center; justify-content: flex-end; margin-top: 20px;}
+.googleplay{width: 150px;height: 50px;margin-right: 20px;cursor: pointer;}
+.googleplay:hover{transform: scale(1.1);transition: transform 0.5s ease-in-out;}
+.appleStore{margin-top: 0.5px;width: 150px;height: 49px;cursor: pointer;}
+.appleStore:hover{transform: scale(1.1);transition: transform 0.5s ease-in-out;}
+
+/******************************************** footer 하위 설정********************************************/
+
+.footer__wrapper__below{display: flex; align-items: center; justify-content: center; margin-top: 10px;}
+.footer__below{width: 1500px; display: flex; align-items: center;}
+.footer__below__left{display: flex; flex-direction: column; width: 70%; margin-top: 15px;}
+.footer__below__left span{padding: 5px 0px;}
+.footer__below__right{display: flex; width: 30%;}
